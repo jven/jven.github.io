@@ -3,7 +3,7 @@
     <script>
       var req = new XMLHttpRequest();
       req.open("GET", "https://joe.web.ctfcompetition.com/message?msg=tell+me+a+joke");
-      req.open("Access-Control-Allow-Origin", "*");
+      req.setRequestHeader("Access-Control-Allow-Origin", "*");
       req.send();
     </script>
   </head>
